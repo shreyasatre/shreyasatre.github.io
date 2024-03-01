@@ -20,7 +20,7 @@ def make_html(article_url):
     h_name = h_name[0:128] # keep filename at the maximum length of 128
     h_ext = ".html"
 
-    d_css_file = "styles.css"
+    d_css_file = "styles/styles.css"
     d_css = ""
     with open(d_css_file, "r") as f:
         d_css = f.read()
