@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.5.0/semantic.min.css" 
+        integrity="sha512-KXol4x3sVoO+8ZsWPFI/r5KBVB/ssCGB5tsv2nVOKwLg33wTFP3fmnXa47FdSVIshVTgsYk/1734xSk9aFIa4A==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="semanticui.alert.css">
+    <title>Semantic UI Alert</title>
+</head>
+<body>
+    <div class="ui inverted blue vertical masthead center aligned segment">
+        <div class="ui text container">
+            <h1 class="ui inverted header">Semantic UI Alert</h1>
+        </div>
+    </div>
+    <div class="ui basic segment">
+        <div class="ui stackable very relaxed aligned centered grid container">
+            <div class="row">
+                <div class="twelve wide column">
+                    <div class="ui dividing header">Demo</div>
+                    <div class="ui form">
+                        <div class="inline fields">
+                            <div class="four wide field">
+                                <label for="title">Title:</label>
+                            </div>
+                            <div class="twelve wide field">
+                                <div class="ui input">
+                                    <input type="text" name="title" value="Notification">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="inline fields">
+                            <div class="four wide field">
+                                <label for="message">Message:</label>
+                            </div>
+                            <div class="twelve wide field">
+                                <div class="ui input">
+                                    <input type="text" name="message" value="Your attention is required">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="inline fields">
+                            <div class="four wide field">
+                                <label for="type">Type:</label>
+                            </div>
+                            <div class="twelve wide field">
+                                <div class="inline fields">
+                                    <div class="field">
+                                        <div class="ui radio checkbox">
+                                          <input type="radio" name="type"  value="info" checked="checked">
+                                          <label>Info</label>
+                                        </div>
+                                      </div>
+                                      <div class="field">
+                                        <div class="ui radio checkbox">
+                                          <input type="radio" name="type" value="success">
+                                          <label>Success</label>
+                                        </div>
+                                      </div>
+                                      <div class="field">
+                                        <div class="ui radio checkbox">
+                                          <input type="radio" name="type" value="warning">
+                                          <label>Warning</label>
+                                        </div>
+                                      </div>
+                                      <div class="field">
+                                        <div class="ui radio checkbox">
+                                          <input type="radio" name="type" value="error">
+                                          <label>Error</label>
+                                        </div>
+                                      </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="inline fields">
+                            <div class="four wide field">
+                                <label for="position">Position:</label>
+                            </div>
+                            <div class="twelve wide field">
+                                <div class="inline fields">
+                                    <div class="field">
+                                        <div class="ui radio checkbox">
+                                          <input type="radio" name="position" value="top" checked="checked">
+                                          <label>Top</label>
+                                        </div>
+                                    </div>
+                                    <div class="field">
+                                      <div class="ui radio checkbox">
+                                        <input type="radio" name="position"  value="bottom">
+                                        <label>Bottom</label>
+                                      </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="inline fields">
+                            <div class="four wide field">
+                                <label for="placement">Placement:</label>
+                            </div>
+                            <div class="twelve wide field">
+                                <div class="inline fields">
+                                    <div class="field">
+                                        <div class="ui radio checkbox">
+                                          <input type="radio" name="placement" value="left" checked="checked">
+                                          <label>Left</label>
+                                        </div>
+                                    </div>
+                                    <div class="field">
+                                      <div class="ui radio checkbox">
+                                        <input type="radio" name="placement" value="center">
+                                        <label>Center</label>
+                                      </div>
+                                    </div>
+                                    <div class="field">
+                                      <div class="ui radio checkbox">
+                                        <input type="radio" name="placement" value="right">
+                                        <label>Right</label>
+                                      </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="inline fields">
+                            <div class="four wide field">
+                                <label for="theme">Sticky:</label>
+                            </div>
+                            <div class="twelve wide field">
+                                <div class="inline fields">
+                                    <div class="field">
+                                        <div class="ui toggle checkbox">
+                                            <input type="checkbox" name="sticky">
+                                            <label></label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="inline fields">
+                            <div class="four wide field">
+                                <label for="theme">Progress Bar:</label>
+                            </div>
+                            <div class="twelve wide field">
+                                <div class="inline fields">
+                                    <div class="field">
+                                        <div class="ui toggle checkbox">
+                                            <input type="checkbox" name="progressbar" checked="checked">
+                                            <label></label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="inline fields">
+                            <div class="four wide field">
+                                <label for="theme">Theme:</label>
+                            </div>
+                            <div class="twelve wide field">
+                                <div class="inline fields">
+                                    <div class="field">
+                                        <div class="ui radio checkbox">
+                                          <input type="radio" name="theme" value="immersive" checked="checked">
+                                          <label>Immersive</label>
+                                        </div>
+                                    </div>
+                                    <div class="field">
+                                      <div class="ui radio checkbox">
+                                        <input type="radio" name="theme"  value="basic">
+                                        <label>Basic</label>
+                                      </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="inline fields">
+                            <div class="four wide field">
+                                <label for="title">Auto Hide Delay:</label>
+                            </div>
+                            <div class="eight wide field">
+                                <div class="ui right labeled input">
+                                    <input type="number" max="5000" min="0" value=5000 name="autohidedelay">
+                                    <div class="ui label">milliseconds</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <button class="ui submit green button" id="alertShow">Show Alert</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="twelve wide column">
+                    <div class="ui dividing header">Live Example</div>
+            
+                    <!-- HTML generated using hilite.me -->
+                    <div style="background: #f8f8f8; overflow:auto;width:auto;padding:1em; font-size: 0.9em;">
+                        <pre style="margin: 0 auto; line-height: 125%">
+<span style="color: #204a87; font-weight: bold">&lt;html&gt;</span>
+<span style="color: #204a87; font-weight: bold">&lt;head&gt;</span>
+    <span style="color: #204a87; font-weight: bold">&lt;title&gt;&lt;/title&gt;</span>
+    <span style="color: #204a87; font-weight: bold">&lt;link</span> <span style="color: #c4a000">rel=</span><span style="color: #4e9a06">&quot;stylesheet&quot;</span> <span style="color: #c4a000">type=</span><span style="color: #4e9a06">&quot;text/css&quot;</span> <span style="color: #c4a000">href=</span><span style="color: #4e9a06">&quot;css/semantic.min.css&quot;</span><span style="color: #204a87; font-weight: bold">&gt;</span>
+    <span style="color: #204a87; font-weight: bold">&lt;link</span> <span style="color: #c4a000">rel=</span><span style="color: #4e9a06">&quot;stylesheet&quot;</span> <span style="color: #c4a000">type=</span><span style="color: #4e9a06">&quot;text/css&quot;</span> <span style="color: #c4a000">href=</span><span style="color: #4e9a06">&quot;css/semanticui.alert.css&quot;</span><span style="color: #204a87; font-weight: bold">&gt;</span>
+<span style="color: #204a87; font-weight: bold">&lt;/head&gt;</span>
+<span style="color: #204a87; font-weight: bold">&lt;body&gt;</span>
+    <span style="color: #204a87; font-weight: bold">&lt;script </span><span style="color: #c4a000">type=</span><span style="color: #4e9a06">&quot;text/javascript&quot;</span> <span style="color: #c4a000">src=</span><span style="color: #4e9a06">&quot;js/jquery.min.js&quot;</span><span style="color: #204a87; font-weight: bold">&gt;&lt;/script&gt;</span>
+    <span style="color: #204a87; font-weight: bold">&lt;script </span><span style="color: #c4a000">type=</span><span style="color: #4e9a06">&quot;text/javascript&quot;</span> <span style="color: #c4a000">src=</span><span style="color: #4e9a06">&quot;js/semantic.min.js&quot;</span><span style="color: #204a87; font-weight: bold">&gt;&lt;/script&gt;</span>
+    <span style="color: #204a87; font-weight: bold">&lt;script </span><span style="color: #c4a000">type=</span><span style="color: #4e9a06">&quot;text/javascript&quot;</span> <span style="color: #c4a000">src=</span><span style="color: #4e9a06">&quot;js/semanticui.alert.js&quot;</span><span style="color: #204a87; font-weight: bold">&gt;&lt;/script&gt;</span>
+    <span style="color: #204a87; font-weight: bold">&lt;script </span><span style="color: #c4a000">type=</span><span style="color: #4e9a06">&quot;text/javascript&quot;</span><span style="color: #204a87; font-weight: bold">&gt;</span>
+        <span style="color: #204a87;">
+        <span style="color: #000000">$(document).ready(function(){</span>
+            <span style="color: #000000">$.suiAlert({</span>
+                <span style="color: #000000">title</span><span style="color: #ce5c00; font-weight: bold">:</span> <span style="color: #4e9a06">&#39;<span id="alertTitle">Notification</span>&#39;</span><span style="color: #000000; font-weight: bold">,</span> 
+                <span style="color: #000000">message</span><span style="color: #ce5c00; font-weight: bold">:</span> <span style="color: #4e9a06">&#39;<span id="alertMessage">Your attention is required</span>&#39;</span><span style="color: #000000; font-weight: bold">,</span>
+                <span style="color: #000000">type</span><span style="color: #ce5c00; font-weight: bold">:</span> <span style="color: #4e9a06">&#39;<span id="alertType">error</span>&#39;</span><span style="color: #000000; font-weight: bold">,</span>
+                <span style="color: #000000">position</span><span style="color: #ce5c00; font-weight: bold">:</span> <span style="color: #4e9a06">&#39;<span id="alertPosition">bottom-right</span>&#39;</span><span style="color: #000000; font-weight: bold">,</span>
+                <span style="color: #000000">sticky</span><span style="color: #ce5c00; font-weight: bold">:</span> <span style="color: #204a87; font-weight: bold"><span id="alertSticky">false</span></span><span style="color: #000000; font-weight: bold">,</span>
+                <span style="color: #000000">progressBar</span><span style="color: #ce5c00; font-weight: bold">:</span> <span style="color: #204a87; font-weight: bold"><span id="alertProgressbar">true</span></span><span style="color: #000000; font-weight: bold">,</span>
+                <span style="color: #000000">autoHideDelay</span><span style="color: #ce5c00; font-weight: bold">:</span> <span style="color: #0000cf; font-weight: bold"><span id="alertAutoHideDelay">5000</span></span><span style="color: #000000; font-weight: bold">,</span>
+                <span style="color: #000000">theme</span><span style="color: #ce5c00; font-weight: bold">:</span> <span style="color: #4e9a06">&#39;<span id="alertTheme">basic</span>&#39;</span><span style="color: #000000; font-weight: bold">,</span>
+                <span style="color: #000000">callback</span><span style="color: #ce5c00; font-weight: bold">:</span> <span style="color: #204a87; font-weight: bold">null</span><span style="color: #000000; font-weight: bold">,</span>
+                <span style="color: #000000">callbackData</span><span style="color: #ce5c00; font-weight: bold">:</span> <span style="color: #204a87; font-weight: bold">null</span>
+            <span style="color: #000000; font-weight: bold">});</span>
+        <span style="color: #000000; font-weight: bold">});</span>
+        </span>
+    <span style="color: #204a87; font-weight: bold">&lt;/script&gt;</span>
+<span style="color: #204a87; font-weight: bold">&lt;/body&gt;</span>
+<span style="color: #204a87; font-weight: bold">&lt;/html&gt;</span>
+                        </pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js" 
+        integrity="sha512-57oZ/vW8ANMjR/KQ6Be9v/+/h6bq9/l3f0Oc7vn6qMqyhvPd1cvKBRWWpzu0QoneImqr2SkmO4MSqU+RpHom3Q==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.5.0/semantic.min.js" 
+        integrity="sha512-Xo0Jh8MsOn72LGV8kU5LsclG7SUzJsWGhXbWcYs2MAmChkQzwiW/yTQwdJ8w6UA9C6EVG18GHb/TrYpYCjyAQw==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="semanticui.alert.js"></script>
+    <script>
+
+        let alertObj = {
+            alertTitle: "",
+            alertMessage: "",
+            alertType: "",
+            alertPosition: "",
+            alertSticky: "",
+            alertProgressbar: "",
+            alertTheme: "",
+            alertAutoHideDelay: 0,
+        };
+
+        function getAlertObjValues(){
+            alertObj.alertTitle = $("input[name='title']").val();
+            alertObj.alertMessage = $("input[name='message']").val();
+            alertObj.alertType = $("input[name='type']:checked").val();
+            alertObj.alertPosition = $("input[name='position']:checked").val() + "-" + $("input[name='placement']:checked").val();
+
+            if($('input[name="sticky"]').is(":checked")) {
+                alertObj.alertSticky = true;
+            } else {
+                    alertObj.alertSticky = false;
+            }
+
+            if($('input[name="progressbar"]').is(":checked")) {
+                alertObj.alertProgressbar = true;
+            } else {
+                alertObj.alertProgressbar = false;
+            }
+
+            alertObj.alertTheme = $("input[name='theme']:checked").val();
+            
+            let autoHideDelayValue = parseInt($("input[name='autohidedelay']").val());
+            if (isNaN(autoHideDelayValue) === true 
+                || autoHideDelayValue < 0 
+                || autoHideDelayValue > 5000) {
+                alertObj.alertAutoHideDelay = 5000;
+            } else {
+                alertObj.alertAutoHideDelay = $("input[name='autohidedelay']").val();
+            }
+
+            return alertObj;
+        };
+
+        function highlight(id){
+            $("#" + id).stop(false, true);
+            $("#" + id).effect("highlight", {}, 500);
+        };
+
+        $(document).ready(function(){
+
+            $("input[name='title']").on("input", function(){
+                $("#alertTitle").text($("input[name='title']").val());
+                highlight("alertTitle");
+            });
+
+            $("input[name='message']").on("input", function(){
+                $("#alertMessage").text($("input[name='message']").val());
+                highlight("alertMessage");
+            });
+
+            $('input[name="type"]').on("change", function(){
+                $("#alertType").text($("input[name='type']:checked").val());
+                highlight("alertType");
+            });
+
+            $('input[name="position"]').on("change", function(){
+                $("#alertPosition").text($("input[name='position']:checked").val() + "-" + $("input[name='placement']:checked").val());
+                highlight("alertPosition");
+            });
+
+            $('input[name="placement"]').on("change", function(){
+                $("#alertPosition").text($("input[name='position']:checked").val() + "-" + $("input[name='placement']:checked").val());
+                highlight("alertPosition");
+            });
+
+            $('input[name="sticky"]').on("change", function(){
+                if($('input[name="sticky"]').is(":checked")) {
+                    $("#alertSticky").text("true");
+                } else {
+                    $("#alertSticky").text("false");
+                }
+                highlight("alertSticky");
+            });
+           
+            $('input[name="progressbar"]').on("change", function(){
+                if($('input[name="progressbar"]').is(":checked")) {
+                    $("#alertProgressbar").text("true");
+                } else {
+                    $("#alertProgressbar").text("false");
+                }
+                highlight("alertProgressbar");
+            });
+           
+            $('input[name="theme"]').on("change", function(){
+                $("#alertTheme").text($("input[name='theme']:checked").val());
+                highlight("alertTheme");
+            });
+
+            $("input[name='autohidedelay']").on("input", function(){
+                
+                let autoHideDelayValue = parseInt($("input[name='autohidedelay']").val());
+                if (isNaN(autoHideDelayValue) === true 
+                    || autoHideDelayValue < 0 
+                    || autoHideDelayValue > 5000) {
+                    $("input[name='autohidedelay']").val(5000);
+                }
+
+                $("#alertAutoHideDelay").text($("input[name='autohidedelay']").val());
+                highlight("alertAutoHideDelay");
+            });
+
+            $("#alertShow").on("click", function(){
+
+                alertObj = getAlertObjValues();
+
+                $.suiAlert({
+                    title: alertObj.alertTitle, 
+                    message: alertObj.alertMessage,
+                    type: alertObj.alertType,
+                    position: alertObj.alertPosition,
+                    sticky: alertObj.alertSticky,
+                    progressBar: alertObj.alertProgressbar,
+                    autoHideDelay: alertObj.alertAutoHideDelay,
+                    theme: alertObj.alertTheme,
+                    callback: null,
+                    callbackData: null
+                });
+            });
+
+        });
+
+    </script>
+</body>
+</html>
