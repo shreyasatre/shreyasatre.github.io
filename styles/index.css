@@ -7,8 +7,15 @@ html {
   body {
   
     --background-color: #fdfdfd;
+    --background-color-rgb: 253, 253, 253;
     --text-color: #1a1a1a;
+    --text-color-rgb: 26, 26, 26;
     --transition-delay: 0.5s;
+
+    --hr2-rgba1: rgba(0, 0, 0, 0);
+    --hr2-rgba2: rgba(0, 0, 0, 0.75);
+    --hr3-rgba1: rgba(0, 0, 0, 0.1);
+    --hr3-rgba2: rgba(255, 255, 255, 0.3);
   
     color: var(--text-color);
     background-color: var(--background-color);
@@ -29,6 +36,10 @@ html {
   body.dark {
     --background-color: #202020;
     --text-color: #dddddd;
+    --hr2-rgba1: rgba(255, 255, 255, 0);
+    --hr2-rgba2: rgba(255, 255, 255, 0.75);
+    --hr3-rgba1: rgba(255, 255, 255, 0.1);
+    --hr3-rgba2: rgba(0, 0, 0, 0.3);
   }
   
   @media (max-width: 600px) {
@@ -142,11 +153,19 @@ html {
     background: repeating-linear-gradient(90deg,var(--text-color),var(--text-color) 1px,transparent 1px,transparent 2px);
   }
 
-  hr.style-two {
+  hr.hr2 {
     border: 0;
     height: 1px;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    background-image: linear-gradient(to right, var(--hr2-rgba1), var(--hr2-rgba2), var(--hr2-rgba1));
   }
+
+  hr.hr3 {
+    border: 0;
+    height: 0;
+    width: 75%;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
   
   table {
     border-collapse: collapse;
